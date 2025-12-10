@@ -20,13 +20,13 @@ in
     # obtained from Cargo.toml, so you don't
     # have to do everything manually
     pname = "abrt-dbus";
-    version = "0.1";
+    version = "0.1.0";
 
     # Your govnocodes
     src = pkgs.lib.cleanSource ./.;
 
     cargoLock = {
-      # lockFile = ./Cargo.lock;
+      lockFile = ./Cargo.lock;
       # Use this if you have dependencies from git instead
       # of crates.io in your Cargo.toml
       # outputHashes = {
@@ -60,6 +60,7 @@ in
     # with nix package
     buildInputs = with pkgs; [
       openssl
+      pkg-config
       # libressl
     ];
 

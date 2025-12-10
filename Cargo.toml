@@ -4,3 +4,11 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+dbus = "0.9.9"
+dbus-crossroads = "0.5"
+tokio = "1.48.0"
+dbus-tokio = "0.7.6"
+futures = "0.3.31"
+# dbus-tree = "0.9.2"
+# libdbus-sys = "0.2.6"
+# libc = "=0.2.178"

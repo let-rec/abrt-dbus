@@ -56,6 +56,8 @@ in
     # with nix package
     buildInputs = with pkgs; [
       openssl
+      dbus
+      pkg-config
       # libressl
     ];
 
