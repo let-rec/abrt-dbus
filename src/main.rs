@@ -1,5 +1,12 @@
+use dbus::blocking::Connection;
+use dbus_crossroads::Crossroads;
+
 mod dbus_server;
 use crate::dbus_server::dbus_server;
+
+
+mod monitor;
+use crate::monitor::monitor;
 
 mod match_signal;
 use crate::match_signal::match_signal;
@@ -7,26 +14,24 @@ use crate::match_signal::match_signal;
 // mod dbus_tokio_server;
 // use crate::dbus_tokio_server::tokio_server;
 fn main() {
-//  let c = Connection::new_session()?;
-// c.request_name("com.example.dbustest", false, true, false)?;
-// let mut cr = Crossroads::new();
-// let token = cr.register("com.example.dbustest", |b| {
-//     b.method("Hello", ("name",), ("reply",), |_, _, (name,): (String,)| {
-//         Ok((format!("Hello {}!", name),))
-//     });
-// });
-// cr.insert("/hello", &[token], ());
-// cr.serve(&c)
-    // let _ = dbus_server();
-    match_signal();
+    // let c = Connection::new_session()?;
+    // c.request_name("com.example.dbustest", false, true, false)?;
+    // let mut cr = Crossroads::new();
+    // let token = cr.register("com.example.dbustest", |b| {
+    //     b.method(
+    //         "Hello",
+    //         ("name",),
+    //         ("reply",),
+    //         |_, _, (name,): (String,)| Ok((format!("Hello {}!", name),)),
+    //     );
+    // });
+    // cr.insert("/hello", &[token], ());
+    // cr.serve(&c)?;
+    // Ok(())
+    let _ = monitor();
+    // match_signal();
     // tokio_server();
 }
-
-
-
-
-
-
 
 // use dbus::blocking::Connection;
 // use std::time::Duration;

@@ -10,6 +10,7 @@ dependencies = [
  "dbus-crossroads",
  "dbus-tokio",
  "futures",
+ "libdbus-sys",
  "tokio",
 ]
 
