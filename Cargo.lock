@@ -10,15 +10,13 @@ dependencies = [
  "dbus-crossroads",
  "dbus-tokio",
  "futures",
- "libdbus-sys",
  "tokio",
 ]
 
 [[package]]
 name = "dbus"
 version = "0.9.9"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "190b6255e8ab55a7b568df5a883e9497edc3e4821c06396612048b430e5ad1e9"
+source = "git+https://github.com/lambdajon/dbus-rs.git?branch=debug-parse-entry#329c19f878f1db9220027eca79b2e965a2341b21"
 dependencies = [
  "futures-channel",
  "futures-util",
@@ -30,8 +28,7 @@ dependencies = [
 [[package]]
 name = "dbus-crossroads"
 version = "0.5.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "64bff0bd181fba667660276c6b7ebdc50cff37ce593e7adf9e734f89c8f444e8"
+source = "git+https://github.com/lambdajon/dbus-rs.git?branch=debug-parse-entry#329c19f878f1db9220027eca79b2e965a2341b21"
 dependencies = [
  "dbus",
 ]
@@ -39,8 +36,7 @@ dependencies = [
 [[package]]
 name = "dbus-tokio"
 version = "0.7.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "007688d459bc677131c063a3a77fb899526e17b7980f390b69644bdbc41fad13"
+source = "git+https://github.com/lambdajon/dbus-rs.git?branch=debug-parse-entry#329c19f878f1db9220027eca79b2e965a2341b21"
 dependencies = [
  "dbus",
  "libc",
@@ -145,8 +141,7 @@ checksum = "37c93d8daa9d8a012fd8ab92f088405fb202ea0b6ab73ee2482ae66af4f42091"
 [[package]]
 name = "libdbus-sys"
 version = "0.2.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5cbe856efeb50e4681f010e9aaa2bf0a644e10139e54cde10fc83a307c23bd9f"
+source = "git+https://github.com/lambdajon/dbus-rs.git?branch=debug-parse-entry#329c19f878f1db9220027eca79b2e965a2341b21"
 dependencies = [
  "pkg-config",
 ]

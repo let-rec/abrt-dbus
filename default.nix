@@ -31,7 +31,7 @@ in
       # of crates.io in your Cargo.toml
       # outputHashes = {
       #   # Sha256 of the git repository, doesn't matter if it's monorepo
-      #   "example-0.1.0" = "sha256-80EwvwMPY+rYyti8DMG4hGEpz/8Pya5TGjsbOBF0P0c=";
+      #   "dbus" = "sha256-80EwvwMPY+rYyti8DMG4hGEpz/8Pya5TGjsbOBF0P0c=";
       # };
     };
 
